@@ -272,6 +272,7 @@ The updates where removed since we can't support work that we have not done.]]><
 				<action type="after-add"><![CDATA[.issue-icon span	{ background-image: url("{IMG_BUTTON_ISSUE_NEW_SRC}"); }]]></action>
 			</edit>
 		</open>
+		<php-installer><![CDATA[install/index.php]]></php-installer>
 		<diy-instructions lang="en"><![CDATA[Run the included installer at http://yoursite.com/phpBB/install/index.php
 Once done make sure to remove install folder from your server.]]></diy-instructions>
 	</action-group>
