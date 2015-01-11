@@ -9,7 +9,9 @@
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
 		<title lang="en"><![CDATA[phpBB Tracker]]></title>
 		<description lang="en"><![CDATA[Full tracker add-on for phpBB 3.0.x]]></description>
-		<author-notes lang="en"><![CDATA[This MOD requires a minimum PHP version of 5.0.0.]]></author-notes>
+		<author-notes lang="en"><![CDATA[This MOD requires a minimum PHP version of 5.0.0.
+
+The updates where removed since we can't support work that we have not done.]]></author-notes>
 		<author-group>
 			<author>
 				<realname><![CDATA[Jari Kanerva]]></realname>
@@ -118,11 +120,12 @@
 					<change><![CDATA[Some index names in the DB was to long]]></change>
 					<change><![CDATA[Updated install.xml to work with phpBB 3.0.12]]></change>
 					<change><![CDATA[Modified the file structure to work with AutoMOD]]></change>
+					<change><![CDATA[modx 1.2.6]]></change>
 				</changelog>
 			</entry>
 		</history>
 		<link-group>
-			<link type="template" href="subsilver2.xml" lang="en">subsilver2</link>
+			<link type="template" href="contrib/subsilver2.xml" lang="en">subsilver2</link>
 		</link-group>
 	</header>
 	<action-group>
