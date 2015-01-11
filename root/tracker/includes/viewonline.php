@@ -94,4 +94,3 @@ if (!$found_tracker)
 		$location_url = append_sid("{$phpbb_root_path}tracker.$phpEx");
 	}
 }
-?>

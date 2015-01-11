@@ -185,5 +185,3 @@ $lang = array_merge($lang, array(
 	'TRACKER_VERSION_NO_NAME'					=> 'There was no name entered for this version.  You must enter a name.',
 	'TRACKER_VERSION_UP_TO_DATE_ACP'			=> 'Your installation is up to date, no updates are available for your version of phpBB Tracker. You do not need to update your installation.',
 ));
-
-?>

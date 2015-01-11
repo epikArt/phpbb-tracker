@@ -256,5 +256,3 @@ $mod_config['verify'] = array(
 		),
 	),
 );
-
-?>

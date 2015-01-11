@@ -82,5 +82,3 @@ $lang = array_merge($lang, array(
 	'acl_u_tracker_delete_global'	=> array('lang' => 'Can delete all tracker tickets/posts in any project', 			'cat' => 'tracker'),
 	'acl_u_tracker_ticket_security'	=> array('lang' => 'Can specify security tickets if enabled for project',			'cat' => 'tracker'),
 ));
-
-?>

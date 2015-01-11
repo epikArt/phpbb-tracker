@@ -338,5 +338,3 @@ $status_type['issue'] = array(
 );
 
 return $status_type;
-
-?>

@@ -64,5 +64,3 @@ $tracker_types[2] = array(
 );
 
 return $tracker_types;
-
-?>

@@ -209,5 +209,3 @@ class tracker_cache extends cache
 		return $projects;
 	}
 }
-
-?>

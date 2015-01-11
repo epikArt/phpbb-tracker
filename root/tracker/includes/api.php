@@ -777,7 +777,6 @@ class tracker_api
 		$message .= sprintf($user->lang['RETURN_INDEX'], '<a href="' . $this->build_url('board'). '">', '</a>');
 
 		trigger_error($message);
-
 	}
 
 	/**
@@ -1845,11 +1844,10 @@ class tracker_api
 				$selected = '';
 			}
 
-			$options .= '<option value="' . $key . '"' . $selected . '>' . $this->set_lang_name($value['title']) .'</option>';
+			$options .= "<option value='$key'$selected>" . $this->set_lang_name($value['title']) .'</option>';
 		}
 
 		return $options;
-
 	}
 
 	public function get_name($mode, $project_id, $id)
@@ -2194,7 +2192,6 @@ class tracker_api
 		}
 
 		return true;
-
 	}
 
 	/**
@@ -2232,7 +2229,6 @@ class tracker_api
 		}
 
 		return $string;
-
 	}
 
 	/**
@@ -2348,7 +2344,6 @@ class tracker_api
 				'COOKIE'	=> $_COOKIE,
 				'SERVER'	=> $_SERVER,
 			);
-
 
 			foreach ($debug as $key => $value)
 			{
@@ -3302,5 +3297,3 @@ class tracker_api
 		return true;
 	}
 }
-
-?>

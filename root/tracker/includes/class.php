@@ -836,7 +836,6 @@ class tracker
 			'WHERE'		=> "t.version_id = $version_id AND " . $db->sql_in_set('t.status_id', array(15, 16)),
 
 			'ORDER_BY'	=>	't.ticket_id ASC',
-
 		);
 
 		$sql = $db->sql_build_query('SELECT', $sql_array);
@@ -1249,5 +1248,3 @@ class tracker_url_builder
 		}
 	}
 }
-
-?>

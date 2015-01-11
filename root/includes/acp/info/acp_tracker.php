@@ -37,5 +37,3 @@ class acp_tracker_info
 	{
 	}
 }
-
-?>

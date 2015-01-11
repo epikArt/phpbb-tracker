@@ -116,5 +116,3 @@ class install_uninstall extends module
 		));
 	}
 }
-
-?>

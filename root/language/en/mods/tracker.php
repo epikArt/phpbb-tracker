@@ -288,4 +288,3 @@ if (!function_exists('tracker_format_username'))
 		}
 	}
 }
-?>

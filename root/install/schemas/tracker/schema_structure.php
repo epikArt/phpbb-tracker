@@ -192,5 +192,3 @@ $schema_data = array();
 		),
 		'PRIMARY_KEY'	=> array('user_id', 'ticket_id'),
 	);
-
-?>

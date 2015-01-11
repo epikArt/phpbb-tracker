@@ -152,5 +152,3 @@ $lang = array_merge($lang, array(
 	'WELCOME_INSTALL'						=> 'Welcome to phpBB Tracker Installation',
 	'WRITABLE'								=> 'Writable',
 ));
-
-?>

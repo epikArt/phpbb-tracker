@@ -539,5 +539,3 @@ class install_verify extends module
 		));
 	}
 }
-
-?>

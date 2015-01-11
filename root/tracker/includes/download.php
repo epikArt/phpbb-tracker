@@ -479,4 +479,3 @@ function file_gc()
 	$db->sql_close();
 	exit;
 }
-?>

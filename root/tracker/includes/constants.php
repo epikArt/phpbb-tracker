@@ -65,4 +65,3 @@ define('TRACKER_ALL', 0);
 define('TRACKER_ALL_OPENED', 1);
 define('TRACKER_ALL_CLOSED', 2);
 define('TRACKER_NEW_STATUS', 3);
-?>

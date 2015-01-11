@@ -1329,5 +1329,3 @@ else
 {
 	$tracker->display_index($project_cat_id);
 }
-
-?>

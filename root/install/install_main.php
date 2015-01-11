@@ -72,5 +72,3 @@ class install_main extends module
 		));
 	}
 }
-
-?>

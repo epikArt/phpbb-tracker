@@ -100,7 +100,7 @@ class file_functions
 
 		foreach (scandir($dir) as $file)
 		{
-			if (in_array($file, array('.', '..', '.svn'), true))
+			if (in_array($file, array('.', '..', '.svn', '.git'), true))
 			{
 				continue;
 			}
@@ -257,5 +257,3 @@ class file_functions
 		return $list;
 	}
 }
-
-?>
