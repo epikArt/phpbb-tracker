@@ -7,39 +7,7 @@
 <p>{L_EXPLAIN}</p>
 <!-- ENDIF -->
 
-<!-- IF S_VERSION_CHECK -->
-
-	<h1>{L_TRACKER_VERSION_CHECK}</h1>
-
-	<p>{L_TRACKER_VERSION_CHECK_EXPLAIN}</p>
-
-	<!-- IF S_UP_TO_DATE -->
-		<div class="successbox">
-			<p>{L_TRACKER_VERSION_UP_TO_DATE_ACP}</p>
-		</div>
-	<!-- ELSE -->
-		<div class="errorbox">
-			<p>{L_TRACKER_VERSION_NOT_UP_TO_DATE_ACP}</p>
-		</div>
-	<!-- ENDIF -->
-
-	<fieldset>
-		<legend></legend>
-	<dl>
-		<dt><label>{L_CURRENT_VERSION}</label></dt>
-		<dd><strong>{CURRENT_VERSION}</strong></dd>
-	</dl>
-	<dl>
-		<dt><label>{L_LATEST_VERSION}</label></dt>
-		<dd><strong>{LATEST_VERSION}</strong></dd>
-	</dl>
-	</fieldset>
-
-	<!-- IF not S_UP_TO_DATE -->
-		{UPDATE_INSTRUCTIONS}
-		<br /><br />
-	<!-- ENDIF -->
-<!-- ELSEIF S_IN_MANAGE_SETTINGS -->
+<!-- IF S_IN_MANAGE_SETTINGS -->
 <!-- IF S_ERROR -->
 	<div class="errorbox">
 		<h3>{L_WARNING}</h3>
@@ -284,7 +252,7 @@
 			<dl>
 				<dt><label for="project_id">{L_TRACKER_PROJECT_ID}:</label></dt>
 				<dd><select name="project_id" id="project_id">{S_PROJECT_OPTIONS}</select>&nbsp;&nbsp;<input class="button1" type="submit" id="submit" name="submit" value="{L_SUBMIT}" /></dd>
-			</dl>			
+			</dl>
 	<!-- ELSEIF S_IN_MANAGE_COMPONENT_VIEW -->
 	<form id="acp_tracker" method="post" action="{U_ACTION}">
 		<fieldset class="tabulated">

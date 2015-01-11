@@ -88,7 +88,7 @@ class acp_tracker
 		$errstr = '';
 		$errno = 0;
 
-		$info = get_remote_file('www.jeffrusso.net', '/updatecheck', 'phpBBTracker.txt', $errstr, $errno);
+		$info = get_remote_file('phpbbmodders.net', '/versions', 'phpbbtracker.txt', $errstr, $errno);
 
 		if ($info === false)
 		{
@@ -102,16 +102,6 @@ class acp_tracker
 		$update_link = append_sid($phpbb_root_path . 'install/index.' . $phpEx);
 
 		$up_to_date = (version_compare(str_replace('rc', 'RC', strtolower($current_version)), str_replace('rc', 'RC', strtolower($latest_version)), '<')) ? false : true;
-
-		$template->assign_vars(array(
-			'S_VERSION_CHECK'	=> true,
-			'S_UP_TO_DATE'		=> $up_to_date,
-
-			'LATEST_VERSION'	=> $latest_version,
-			'CURRENT_VERSION'	=> $current_version,
-
-			'UPDATE_INSTRUCTIONS'	=> sprintf($user->lang['TRACKER_UPDATE_INSTRUCTIONS'], $announcement_url, $update_link),
-		));
 	}
 
 	public function manage_settings()
@@ -132,10 +122,7 @@ class acp_tracker
 			'title'			=> 'ACP_TRACKER_SETTINGS',
 			'title_explain'	=> 'ACP_TRACKER_SETTINGS_EXPLAIN',
 			'vars'	=> array(
-				'legend1'					=> 'ACP_TRACKER_VERSION_INFO',
-				'version'					=> array('lang' => 'TRACKER_VERSION', 	'validate' => 'string', 'type' => 'custom', 'method' => 'tracker_version', 'explain' => true),
-
-				'legend2'					=> 'ACP_TRACKER_SETTINGS_GENERAL',
+				'legend1'					=> 'ACP_TRACKER_SETTINGS_GENERAL',
 				'allow_attachments'			=> array('lang' => 'TRACKER_ATTACHMENT_ALLOW',		'validate' => 'bool', 	'type' => 'radio:yes_no', 	'explain' => true),
 				'attachment_path'			=> array('lang' => 'TRACKER_ATTACHMENT_PATH',		'validate' => 'path', 	'type' => 'text:30:65', 	'explain' => true),
 				'max_attachments'			=> array('lang' => 'TRACKER_ATTACHMENT_MAX',		'validate' => 'int', 	'type' => 'text:3:4', 		'explain' => true),
@@ -146,7 +133,7 @@ class acp_tracker
 				'top_reporters'				=> array('lang' => 'TRACKER_TOP_REPORTERS',			'validate' => 'int', 	'type' => 'text:3:4', 		'explain' => true),
 				'default_status_type'		=> array('lang' => 'TRACKER_DEFAULT_STATUS_TYPE',	'validate' => 'int', 	'type' => 'select', 		'explain' => true, 'method' => 'default_status_type_select'),
 
-				'legend3'					=> 'ACP_SUBMIT_CHANGES',
+				'legend2'					=> 'ACP_SUBMIT_CHANGES',
 		));
 
 		$this->new_config = $this->tracker->api->config;
