@@ -344,7 +344,7 @@ class tracker_api
 
 		// Add project members to project subscription
 		$members = group_memberships($data['project_group']);
-		if (sizeof($members))
+		if (!empty($members))
 		{
 			foreach ($members as $item)
 			{
